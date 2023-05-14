@@ -1,0 +1,1 @@
+deno compile -A --allow-run main.ts

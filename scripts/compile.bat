@@ -1,0 +1,1 @@
+deno compile -A --allow-run --output ../bin/SoupPackager.exe main.ts
