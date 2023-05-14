@@ -1,1 +1,1 @@
-deno compile -A --allow-run main.ts
+deno run -A --allow-run main.ts

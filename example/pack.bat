@@ -1,0 +1,1 @@
+deno run -A --allow-run main.ts example/package.json
