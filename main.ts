@@ -66,6 +66,10 @@ try{
     console.log(`Packaging { ${config.SoupFile} => ${config.Out} }`)
     await run(`deno compile -A --allow-run --output ${config.Out} Soup/package.ts`)
 }catch{
+    try{
+        console.log(`Removing Soup`)
+        Deno.removeSync("Soup", { recursive: true })
+    }catch{}
     throw `Fatal Error: Could Not Package`
 }
 try{
