@@ -40,12 +40,6 @@ try{
 try{
     Deno.removeSync("Soup", { recursive: true })
 }catch{}
-try{
-    console.log("Installing Soup")
-    await run(`git clone https://github.com/ZombiiTheCoder/Soup.git`)
-}catch {
-    console.log("Could Not Download Soup, Soup is already downloaded or git is not installed")
-}
 let config;
 try{
     if (!Flags[".json"] && existsSync("package.json")){
@@ -58,7 +52,12 @@ try{
 }catch{
     throw "No package.json in location"
 }
-    
+try{
+    console.log("Installing Soup")
+    await run(`git clone https://github.com/ZombiiTheCoder/Soup.git`)
+}catch {
+    console.log("Could Not Download Soup, Soup is already downloaded or git is not installed")
+}
 const soup = Deno.readTextFileSync(config.SoupFile)
 const packager = Deno.readTextFileSync("Soup/package.ts").replaceAll("$file", soup)
 Deno.writeTextFileSync("Soup/package.ts", packager)
