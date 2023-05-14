@@ -48,7 +48,7 @@ try{
 }
 let config;
 try{
-    if (existsSync("package.json")){
+    if (!Flags[".json"] && existsSync("package.json")){
         config = JSON.parse(Deno.readTextFileSync("package.json"))
     }else if (existsSync(Flags["file"])){
         config = JSON.parse(Deno.readTextFileSync(Flags["file"]))
