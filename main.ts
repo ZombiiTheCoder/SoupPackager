@@ -28,7 +28,7 @@ export function ProcessFlags(args: string[]): Record<string, any>{
 
 const Flags = ProcessFlags(Deno.args)
 
-if (Flags["-v"]){ console.log("Current SoupPackager Version :", "0.1.0"); Deno.exit() }
+if (Flags["-v"]){ console.log("Current SoupPackager Version :", "0.0.1a"); Deno.exit() }
 
 try{
     await run(`deno`)
