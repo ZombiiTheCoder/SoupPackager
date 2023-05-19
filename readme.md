@@ -21,11 +21,11 @@ This is a program written in TypeScript to package scripts written in the langua
 
 ### Flags And Args
 
-{file}.sp = The Filename.sp you input intend to run
-
-Recommended Format: soup_packager.exe {file.json}
-
-No Flags Or Args To Load Closest Package.json
+{file}.sp = The Filename.sp you input intend to run<br />
+<br />
+Recommended Format: soup_packager.exe {file.json}<br />
+<br />
+No Flags Or Args To Load Closest Package.json<br />
 ### Json Format
 
 Package.json
