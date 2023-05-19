@@ -2,19 +2,19 @@
 
 ## Soup Packager
 
-#### Requirements
+### Requirements
 
-Deno Installed
+Deno Installed <br />
 Git Installed
 
-#### Compile
+### Compile
 
 `scripts/compile.bat`
 
-#### Install
+### Install
 
 `scripts/install.bat`
 
-#### Desc
+### Desc
 
 This is a program written in TypeScript to package scripts written in the language of soup.
