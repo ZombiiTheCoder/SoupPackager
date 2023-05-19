@@ -15,6 +15,6 @@ Git Installed
 
 `scripts/install.bat`
 
-#### About
+#### Desc
 
 This is a program written in TypeScript to package scripts written in the language of soup.
